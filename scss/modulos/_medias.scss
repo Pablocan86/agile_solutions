@@ -109,6 +109,11 @@
 
                 form input {
                     width: 100%;
+                    border: 1px solid $paleta_gris_claro;
+                background-color: $paleta_gris_claro;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: 0px 10px 30px $paleta_violeta_oscuro;
                 }
 
                 textarea {
