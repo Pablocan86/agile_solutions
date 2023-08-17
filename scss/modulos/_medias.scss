@@ -107,23 +107,29 @@
             .section4 .article1-section4 {
                 flex-direction: column;
 
-                form input {
+                form {
+                    
+                    input {
                     width: 100%;
                     border: 1px solid $paleta_gris_claro;
-                background-color: $paleta_gris_claro;
-                border-radius: 5px;
-                outline: none;
-                box-shadow: 0px 10px 30px $paleta_violeta_oscuro;
-                }
+                    background-color: $paleta_gris_claro;
+                    border-radius: 5px;
+                    outline: none;
+                    box-shadow: 0px 10px 30px $paleta_violeta_oscuro;
+                    }
 
-                textarea {
-                    width: 1005px;
-                }
-
-                .divbotones {
+                    textarea {
                     width: 100%;
-                    gap:40px;
+                    }
+
+                    .divbotones {
+                        width: 100%;
+                        margin-top: 20px;
+                        
+                    }
                 }
+
+                
 
                 .div1-section4 {
                     img{

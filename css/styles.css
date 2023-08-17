@@ -6,6 +6,7 @@
 
 body {
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat 2, 1fr;
   grid-template-rows: repeat 3, 1fr;
@@ -84,11 +85,10 @@ main {
 }
 main .section1 {
   width: 100%;
-  background: url(../assets/images/banner-enero20.jpg);
+  background-image: url(../assets/images/banner-enero20.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-origin: initial;
   background-clip: initial;
   background-color: initial;
 }
@@ -288,6 +288,7 @@ main .section4 form {
   width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #003942;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -299,6 +300,7 @@ main .section4 form label {
 main .section4 form input {
   width: 90%;
   height: 2rem;
+  font-size: 1.5rem;
   border: 1px solid #F4F3F4;
   background-color: #F4F3F4;
   border-radius: 5px;
@@ -309,6 +311,7 @@ main .section4 form input {
 }
 main .section4 form textarea {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
   box-shadow: 0px 10px 30px #0E1139;
   padding-left: 10px;
   padding-top: 10px;
@@ -325,7 +328,7 @@ main .section4 form .divbotones {
   justify-content: space-evenly;
   align-items: center;
 }
-main .section4 form .divbotones input {
+main .section4 form .divbotones .input-btn {
   text-align: center;
   margin-top: 20px;
   padding-top: 10px;
@@ -336,7 +339,7 @@ main .section4 form .divbotones input {
   color: #F4F3F4;
   font-size: 1.2rem;
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 18px;
   padding-bottom: 10px;
   border: none;
 }
@@ -385,7 +388,7 @@ footer p, footer p a {
   padding-bottom: 10px;
 }
 
-@media (max-width: 600px) and (min-width: 320px) {
+@media (max-width: 480px) and (min-width: 320px) {
   body header {
     display: flex;
     flex-direction: column;
@@ -466,13 +469,18 @@ footer p, footer p a {
   }
   body main .section4 .article1-section4 form input {
     width: 100%;
+    border: 1px solid #F4F3F4;
+    background-color: #F4F3F4;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 10px 30px #0E1139;
   }
-  body main .section4 .article1-section4 textarea {
-    width: 1005px;
-  }
-  body main .section4 .article1-section4 .divbotones {
+  body main .section4 .article1-section4 form textarea {
     width: 100%;
-    gap: 40px;
+  }
+  body main .section4 .article1-section4 form .divbotones {
+    width: 100%;
+    margin-top: 20px;
   }
   body main .section4 .article1-section4 .div1-section4 img {
     display: none;
