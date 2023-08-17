@@ -389,6 +389,10 @@ footer p, footer p a {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "main" "footer";
+  }
   body header {
     display: flex;
     flex-direction: column;
