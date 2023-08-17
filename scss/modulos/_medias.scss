@@ -1,0 +1,133 @@
+@media (max-width: 600px) and (min-width: 320px){
+    body{ 
+    
+        header {
+            @include flexbox (column, space-around, center);
+        
+            .imglogo {
+                margin-top: 30px;
+                width: 150px;
+                height: 100px;
+            
+            }
+
+            nav {
+                @include flexbox (column, center, center);
+                gap: 20px;
+                font-size: 1.5rem;
+
+                ul {
+                    gap:40px;
+                    padding-bottom: 20px;
+
+                    li {
+                    width: 200px;
+                    font-size: 2rem;
+                    }
+                }
+
+                .redes-header {
+                    position: fixed;
+                    top: 30px;
+                    right: 30px;
+                }
+            }
+        }
+        main {
+
+            .section1 .div-section1{ 
+            
+                .p-div-section1 {
+                    font-size: 1.5rem;
+                }
+                .a-div-section1 {
+                    font-size: 1.5rem;
+                    width: 230px;
+                    height: 60px;
+                }
+            }
+            .section2{ 
+                .article2-section2 {
+                    .h4-article2-section2 {
+                        font-size: 2.5rem;
+                    }
+                    .div-article2-section2{
+    
+                        p {
+                            text-align: justify;
+                            font-size: 1.5rem;
+                        }
+                        a p {
+                            width: 230px;
+                            height: 60px;
+                            padding-left: 10px;
+                        }    
+                    }
+                }    
+
+                .article3-section2 {
+                    div h3 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        text-align: justify;
+                    }
+                }   
+
+            }
+
+
+
+
+
+            .section3 .article2-section3{
+
+                    flex-direction: column;
+                    
+                    img {
+                        width: 80%;
+                    }
+                    .div1-section3 {
+                    margin: 20px 30px;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        text-align: justify;
+                    }
+                }
+            
+            }
+
+            .section4 .article1-section4 {
+                flex-direction: column;
+
+                form input {
+                    width: 100%;
+                }
+
+                textarea {
+                    width: 1005px;
+                }
+
+                .divbotones {
+                    width: 100%;
+                    gap:40px;
+                }
+
+                .div1-section4 {
+                    img{
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
