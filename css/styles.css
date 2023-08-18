@@ -88,12 +88,8 @@ main .section1 {
   background-image: url(../assets/images/banner-enero20.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: initial;
-  background-color: initial;
 }
 main .section1 .div-section1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 50%;
   margin-left: 30px;
   padding-top: 200px;
@@ -389,10 +385,6 @@ footer p, footer p a {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas: "head" "main" "footer";
-  }
   body header {
     display: flex;
     flex-direction: column;
@@ -473,14 +465,16 @@ footer p, footer p a {
   }
   body main .section4 .article1-section4 form input {
     width: 100%;
-    border: 1px solid #F4F3F4;
+    border-bottom: 2px solid #0E1139;
     background-color: #F4F3F4;
     border-radius: 5px;
     outline: none;
-    box-shadow: 0px 10px 30px #0E1139;
+    box-shadow: 0px 0px 0px #0E1139;
   }
   body main .section4 .article1-section4 form textarea {
     width: 100%;
+    border-bottom: 2px solid #0E1139;
+    box-shadow: 0px 0px 0px #0E1139;
   }
   body main .section4 .article1-section4 form .divbotones {
     width: 100%;

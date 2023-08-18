@@ -1,10 +1,6 @@
 @media (max-width: 480px) and (min-width: 320px){
     body{ 
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "head"
-        "main"
-        "footer";
+        
     
         header {
             @include flexbox (column, space-around, center);
@@ -116,15 +112,17 @@
                     
                     input {
                     width: 100%;
-                    border: 1px solid $paleta_gris_claro;
+                    border-bottom: 2px solid $paleta_violeta_oscuro;
                     background-color: $paleta_gris_claro;
                     border-radius: 5px;
                     outline: none;
-                    box-shadow: 0px 10px 30px $paleta_violeta_oscuro;
+                    box-shadow: 0px 0px 0px $paleta_violeta_oscuro;
                     }
 
                     textarea {
                     width: 100%;
+                    border-bottom: 2px solid $paleta_violeta_oscuro;
+                    box-shadow: 0px 0px 0px $paleta_violeta_oscuro;
                     }
 
                     .divbotones {
