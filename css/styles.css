@@ -37,6 +37,7 @@ header .imglogo {
   margin-left: 10px;
 }
 header nav {
+  width: 80%;
   margin-right: 40px;
   display: flex;
   flex-direction: row;

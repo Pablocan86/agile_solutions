@@ -1,3 +1,5 @@
+@import "../modulos/mixin";
+
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +41,7 @@ header {
     }
 
     nav{ 
+        width: 80%;
         margin-right: 40px;
         @include flexbox (row, space-between, center);
         gap: 30px;
