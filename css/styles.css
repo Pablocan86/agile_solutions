@@ -31,10 +31,14 @@ header {
   top: 0px;
   opacity: 0.9;
 }
-header .imglogo {
+header .div-header-logo .imglogo {
   width: 100px;
   height: 80px;
   margin-left: 10px;
+}
+header .div-header-logo h1 {
+  opacity: 0;
+  font-size: 1px;
 }
 header nav {
   width: 80%;
@@ -385,14 +389,14 @@ footer p, footer p a {
   padding-bottom: 10px;
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
   body header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
-  body header .imglogo {
+  body header .div-header-logo .imglogo {
     margin-top: 30px;
     width: 150px;
     height: 100px;
@@ -404,13 +408,17 @@ footer p, footer p a {
     align-items: center;
     gap: 20px;
     font-size: 1.5rem;
+    width: 100%;
   }
   body header nav ul {
     gap: 40px;
     padding-bottom: 20px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
   }
   body header nav ul li {
-    width: 200px;
+    width: 25%;
     font-size: 2rem;
   }
   body header nav .redes-header {
@@ -423,8 +431,8 @@ footer p, footer p a {
   }
   body main .section1 .div-section1 .a-div-section1 {
     font-size: 1.5rem;
-    width: 230px;
-    height: 60px;
+    width: 14rem;
+    height: 3.75rem;
   }
   body main .section2 .article2-section2 .h4-article2-section2 {
     font-size: 2.5rem;
@@ -438,10 +446,19 @@ footer p, footer p a {
     height: 60px;
     padding-left: 10px;
   }
+  body main .section2 .article3-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: spacea-around;
+    align-items: center;
+  }
+  body main .section2 .article3-section2 div {
+    height: 100%;
+  }
   body main .section2 .article3-section2 div h3 {
     font-size: 2.5rem;
   }
-  body main .section2 .article3-section2 p {
+  body main .section2 .article3-section2 div p {
     font-size: 1.5rem;
     text-align: justify;
   }
